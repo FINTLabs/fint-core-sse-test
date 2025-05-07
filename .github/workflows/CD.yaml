@@ -3,7 +3,7 @@ name: CD
 on:
   push:
     tags:
-      - 'v*'
+      - 'client-*'
 
 env:
   REGISTRY: ghcr.io
