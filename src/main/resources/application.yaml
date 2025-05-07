@@ -1,0 +1,18 @@
+fint:
+  sse:
+    url: http://localhost:8080
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          fint:
+            client-id: ${fint.core.oauth2.client-id}
+            client-secret: ${fint.core.oauth2.client-secret}
+            authorization-grant-type: password
+            scope: fint-client
+        provider:
+          fint:
+            token-uri: https://idp.felleskomponent.no/nidp/oauth/nam/token
