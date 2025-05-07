@@ -36,7 +36,6 @@ jobs:
             type=ref,event=branch,enable=false
             type=ref,event=tag,enable=true,format=short,priority=10
             type=sha,enable=true,priority=100,prefix=sha-,suffix=,format=short
-            latest
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
